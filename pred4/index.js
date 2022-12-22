@@ -15,11 +15,9 @@ function provjeriOsobu(event) {
     provjerenaOsobaElement.innerHTML = `<p>Osoba nema i ime i prezime dulje od 6 znakova!</p>`;
   }
 
-  if (musko.checked || zensko.checked) {
+  if (musko.checked || zensko.checked)
     provjerenaOsobaElement.innerHTML += `<p>Vi ste normalni!</p>`;
-  } else {
-    provjerenaOsobaElement.innerHTML += `<p>Vi ste nenormalni!</p>`;
-  }
+  else provjerenaOsobaElement.innerHTML += `<p>Vi ste nenormalni!</p>`;
 
   if (parseInt(godine.value) === NaN || godine.value === "") {
     provjerenaOsobaElement.innerHTML += `<p>Unesite broj godina da bismo vam rekli jeste li u parnoj ili neparnoj godini svog života!</p>`;
@@ -28,4 +26,19 @@ function provjeriOsobu(event) {
   } else {
     provjerenaOsobaElement.innerHTML += `<p>Imate paran broj godina!</p>`;
   }
+}
+
+x = 3;
+while (x < 10) {
+  console.log(x);
+  x += 3;
+}
+
+var mojePrvoPolje = [3, 5, "dhsfgdhgfh", 10];
+mojePrvoPolje[0]; //3
+mojePrvoPolje[2]; //"dhsfgdhgfh"
+mojePrvoPolje.length; //4
+
+for (let i = 0; i < mojePrvoPolje.length; i++) {
+  console.log(mojePrvoPolje[i]);
 }
